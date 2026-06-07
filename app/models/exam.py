@@ -1,4 +1,4 @@
-from app.extensions import db  # changed from "from app import"
+from app import db
 from datetime import datetime
 
 class Topic(db.Model):

@@ -6,7 +6,7 @@
 <div class="result-container">
     <div class="result-header">
         <h2>{{ exam.title }} - Results</h2>
-        <p class="exam-date">{{ result.completed_at.strftime('%d %B %Y at %H:%M') }}</p>
+        <p class="exam-date">{{ result.completed_at.strftime('%d %B %Y at %H:%M') if result.completed_at else 'N/A' }}</p>
     </div>
 
     <div class="result-score">
